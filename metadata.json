@@ -1,0 +1,6 @@
+{
+  "name": "JobShield - Fake Job Detection Demo",
+  "description": "A clean, lightweight, AI-inspired job fraud detection demo frontend for Indian job seekers to identify recruitment scams and red flags.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
