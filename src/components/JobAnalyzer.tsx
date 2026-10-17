@@ -310,7 +310,7 @@ export const JobAnalyzer: React.FC<JobAnalyzerProps> = ({ initialJob, onClearIni
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
             <div className="flex items-center gap-2 text-xs text-slate-500">
               <Info className="w-4 h-4 text-slate-400 shrink-0" />
-              <span>Simulated demo analysis. Runs entirely in your browser with zero data storage.</span>
+              <span>Client-side analysis. Runs entirely in your browser with zero data storage.</span>
             </div>
 
             <button
@@ -546,7 +546,7 @@ export const JobAnalyzer: React.FC<JobAnalyzerProps> = ({ initialJob, onClearIni
                     {/* Disclaimer Banner */}
                     <div className="text-center pt-2 border-t border-slate-100">
                       <p className="text-[11px] text-slate-400 italic">
-                        Disclaimer: JobShield is a college project demonstration. Results are indicative heuristics and should not replace independent candidate background checks.
+                        Disclaimer: JobShield is a student project. Results are indicative heuristics and should not replace independent candidate background checks.
                       </p>
                     </div>
 

@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { MottoMissionSection } from './components/MottoMissionSection';
 import { HowItWorks } from './components/HowItWorks';
 import { ExampleCards } from './components/ExampleCards';
 import { JobAnalyzer } from './components/JobAnalyzer';
@@ -39,7 +40,13 @@ export default function App() {
         {/* Hero Section */}
         <Hero
           onAnalyzeClick={() => scrollToSection('analyzer')}
-          onExploreClick={() => scrollToSection('how-it-works')}
+          onExploreClick={() => scrollToSection('project-motto')}
+        />
+
+        {/* 3D Animated Motto & Core Mission Section */}
+        <MottoMissionSection
+          onAnalyzeClick={() => scrollToSection('analyzer')}
+          onCompanyClick={() => scrollToSection('company-check')}
         />
 
         {/* How It Works (3 Steps) */}

@@ -16,7 +16,7 @@ export const ExampleCards: React.FC<ExampleCardsProps> = ({ onSelectSample }) =>
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#176B52] uppercase tracking-wider mb-1">
               <Sparkles className="w-3.5 h-3.5" />
-              Interactive Demo Cases
+              Interactive Test Cases
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight font-['Plus_Jakarta_Sans',sans-serif]">
               Explore Sample Job Postings
@@ -28,7 +28,7 @@ export const ExampleCards: React.FC<ExampleCardsProps> = ({ onSelectSample }) =>
 
           <div className="inline-flex items-center gap-2 text-xs text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-lg">
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span>All entries are fictional demo listings</span>
+            <span>All entries are fictional sample listings</span>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ export const ExampleCards: React.FC<ExampleCardsProps> = ({ onSelectSample }) =>
                       {job.tag}
                     </span>
                     <span className="text-[11px] font-medium text-slate-400">
-                      Demo Job
+                      Sample Job
                     </span>
                   </div>
 

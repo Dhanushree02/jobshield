@@ -326,7 +326,7 @@ export function analyzeJobText(
       ? `This posting triggered ${detectedWarnings.length} prominent scam indicators, including high-severity red flags like upfront fees or unverified communication channels.`
       : riskLevel === 'Medium Risk'
       ? `This posting contains ${detectedWarnings.length} caution flag(s). While some aspects seem plausible, certain phrasing warrants closer manual inspection.`
-      : `This posting demonstrates legitimate job posting characteristics with ${detectedPositives.length} positive trust signal(s) and minimal fraud indicators.`;
+      : `This posting exhibits legitimate job posting characteristics with ${detectedPositives.length} positive trust signal(s) and minimal fraud indicators.`;
 
   return {
     score: finalScore,

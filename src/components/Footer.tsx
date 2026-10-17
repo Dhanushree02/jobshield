@@ -27,10 +27,10 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
-              A lightweight machine-learning-inspired web demonstration engineered to educate Indian job seekers on recruitment red flags, fake offer indicators, and career safety.
+              A lightweight machine-learning-inspired web platform engineered to educate Indian job seekers on recruitment red flags, fake offer indicators, and career safety.
             </p>
             <p className="text-xs text-slate-400">
-              Academic Project Demonstration • Built with React & Tailwind CSS
+              Academic Project • Built with React & Tailwind CSS
             </p>
           </div>
 
@@ -46,6 +46,14 @@ export const Footer: React.FC = () => {
                   className="text-slate-600 hover:text-[#176B52] transition-colors"
                 >
                   Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollTo('project-motto')}
+                  className="text-slate-600 hover:text-[#176B52] transition-colors"
+                >
+                  Motto & Purpose
                 </button>
               </li>
               <li>
@@ -106,11 +114,11 @@ export const Footer: React.FC = () => {
         {/* Disclaimer Notice */}
         <div className="pt-6 space-y-3">
           <p className="text-[11px] text-slate-400 text-center leading-relaxed max-w-4xl mx-auto">
-            <strong>Disclaimer:</strong> JobShield is a demonstration project. Risk scores are indicative and do not guarantee that a job or employer is genuine or fraudulent.
+            <strong>Disclaimer:</strong> JobShield is an educational project. Risk scores are indicative and do not guarantee that a job or employer is genuine or fraudulent.
           </p>
 
           <p className="text-[11px] text-slate-400 text-center flex items-center justify-center gap-1">
-            <span>Designed for college showcase demonstration</span>
+            <span>Designed for college showcase & scam protection</span>
           </p>
         </div>
 

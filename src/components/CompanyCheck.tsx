@@ -191,7 +191,7 @@ export const CompanyCheck: React.FC = () => {
 
           <div className="mt-3 flex items-center gap-2 text-[11px] text-slate-500">
             <Info className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-            <span>Simulated demonstration data. Does not run live external crawler or scraper requests.</span>
+            <span>Simulated dataset. Does not run live external crawler or scraper requests.</span>
           </div>
         </div>
 

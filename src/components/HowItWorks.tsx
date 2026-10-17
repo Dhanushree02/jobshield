@@ -12,7 +12,7 @@ export const HowItWorks: React.FC = () => {
     {
       step: '02',
       title: 'Analyze Warning Signs',
-      description: 'The demo engine checks for 8+ recruitment red flags such as registration fees, informal chat channels, and unrealistic claims.',
+      description: 'The detection engine checks for 8+ recruitment red flags such as registration fees, informal chat channels, and unrealistic claims.',
       icon: SearchCode
     },
     {
@@ -68,7 +68,7 @@ export const HowItWorks: React.FC = () => {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-semibold text-[#176B52]">
-                  <span>Demo Check</span>
+                  <span>Safety Check</span>
                   <span className="text-slate-300">•</span>
                   <span className="text-slate-500 font-normal">Real-time heuristics</span>
                 </div>

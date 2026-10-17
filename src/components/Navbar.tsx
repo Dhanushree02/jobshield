@@ -17,24 +17,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+    <header className="sticky top-0 z-50 bg-[#05110E]/95 backdrop-blur-md border-b border-emerald-950/80 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
             onClick={() => scrollTo('hero')}
-            className="flex items-center gap-2.5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#176B52] rounded-lg p-1"
+            className="flex items-center gap-2.5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 rounded-lg p-1 cursor-pointer"
             aria-label="JobShield Home"
           >
-            <div className="w-9 h-9 rounded-lg bg-[#176B52] flex items-center justify-center text-white shadow-xs">
-              <ShieldCheck className="w-5 h-5 stroke-[2.2]" />
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-slate-950 shadow-md shadow-emerald-500/20">
+              <ShieldCheck className="w-5 h-5 stroke-[2.4]" />
             </div>
             <div>
-              <span className="text-xl font-bold tracking-tight text-slate-900 block font-['Plus_Jakarta_Sans',sans-serif]">
-                Job<span className="text-[#176B52]">Shield</span>
+              <span className="text-xl font-bold tracking-tight text-white block font-['Plus_Jakarta_Sans',sans-serif]">
+                Job<span className="text-emerald-400">Shield</span>
               </span>
-              <span className="text-[10px] uppercase font-semibold tracking-wider text-slate-400 block -mt-1">
-                Fraud Detection Demo
+              <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-400/80 block -mt-1">
+                Fraud Detection
               </span>
             </div>
           </button>
@@ -43,31 +43,37 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollTo('hero')}
-              className="text-sm font-medium text-slate-600 hover:text-[#176B52] transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Home
             </button>
             <button
+              onClick={() => scrollTo('project-motto')}
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
+            >
+              Motto & Purpose
+            </button>
+            <button
               onClick={() => scrollTo('analyzer')}
-              className="text-sm font-medium text-slate-600 hover:text-[#176B52] transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Analyze Job
             </button>
             <button
               onClick={() => scrollTo('company-check')}
-              className="text-sm font-medium text-slate-600 hover:text-[#176B52] transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               Company Check
             </button>
             <button
               onClick={() => scrollTo('how-it-works')}
-              className="text-sm font-medium text-slate-600 hover:text-[#176B52] transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               How It Works
             </button>
             <button
               onClick={() => scrollTo('about')}
-              className="text-sm font-medium text-slate-600 hover:text-[#176B52] transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               About
             </button>
@@ -77,10 +83,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={onAnalyzeClick}
-              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-[#176B52] hover:bg-[#125440] rounded-lg transition-colors shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#176B52] focus-visible:ring-offset-2"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-bold text-slate-950 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 rounded-lg transition-all shadow-md shadow-emerald-500/25 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
             >
               <span>Analyze a Job</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 stroke-[2.2]" />
             </button>
           </div>
 
@@ -88,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-[#176B52]"
+              className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-400 cursor-pointer"
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -99,34 +105,40 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2">
+        <div className="md:hidden border-b border-emerald-950 bg-[#05110E] px-4 pt-3 pb-5 space-y-2">
           <button
             onClick={() => scrollTo('hero')}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-[#176B52]"
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
           >
             Home
           </button>
           <button
+            onClick={() => scrollTo('project-motto')}
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
+          >
+            Motto & Purpose
+          </button>
+          <button
             onClick={() => scrollTo('analyzer')}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-[#176B52]"
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
           >
             Analyze Job
           </button>
           <button
             onClick={() => scrollTo('company-check')}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-[#176B52]"
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
           >
             Company Check
           </button>
           <button
             onClick={() => scrollTo('how-it-works')}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-[#176B52]"
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
           >
             How It Works
           </button>
           <button
             onClick={() => scrollTo('about')}
-            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-[#176B52]"
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/5 hover:text-emerald-400"
           >
             About
           </button>
@@ -136,10 +148,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onAnalyzeClick }) => {
                 setMobileMenuOpen(false);
                 onAnalyzeClick();
               }}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-[#176B52] hover:bg-[#125440] rounded-lg transition-colors"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-bold text-slate-950 bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 rounded-lg transition-colors cursor-pointer shadow-md"
             >
               <span>Analyze a Job</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 stroke-[2.2]" />
             </button>
           </div>
         </div>
